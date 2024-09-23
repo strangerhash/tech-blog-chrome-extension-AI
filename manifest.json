@@ -1,0 +1,18 @@
+{
+    "manifest_version": 3,
+    "name": "Tech Knowledge Enhancer",
+    "version": "1.0",
+    "description": "Fetches and summarizes technical blogs each time a new tab is opened.",
+    "permissions": ["activeTab", "storage","https://*/*","tabs"],
+    "chrome_url_overrides": {
+      "newtab": "index.html"
+    },
+    "background": {
+      "service_worker": "background.js"
+    },
+    "icons": {
+      "48": "icons/ai-icon.webp",
+      "128": "icons/ai-icon.webp"
+    }
+  }
+  
